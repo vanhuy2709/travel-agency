@@ -14,6 +14,19 @@
     --text-detail: #808080;
 }
 
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .flight-text {
     font-weight: 500;
     font-size: 18px;
@@ -26,18 +39,6 @@
     font-size: 24px;
     line-height: calc(36 / 24);
     color: var(--black-text);
-}
-
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.container {
-    width: 1180px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
 }
 
 body {
@@ -576,6 +577,52 @@ body {
                     margin-left: 1.25rem;
                 }
             }
+        }
+    }
+}
+
+.feedback {
+    background-color: #F7F7F7;
+
+    .feedback-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 1.25rem;
+
+        .feedback-box {
+            background: white;
+            border-radius: 50px;
+            box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: calc(41.8 / 20);
+                text-align: center;
+            }
+            .comment {
+                color: var(--black-text);
+                margin: 5.25rem 1.5rem 0.6rem 2.9rem;
+            }
+
+            .author {
+                color: var(--blue-text);
+            }
+
+            .quote {
+                color: var(--text-detail);
+            }
+
+            .ava-feedback {
+
+            }
+        }
+
+        .box-1 {
+        }
+
+        .box-2 {
         }
     }
 }
