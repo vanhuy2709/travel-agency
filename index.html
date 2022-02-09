@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Agency</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-container">
+                    <div class="header-top">
+                        <div class="header-logo">Treloo</div>
+                        <div class="header-menu">
+                            <ul class="menu-list">
+                                <li class="menu-link">Review</li>
+                                <li class="menu-link">Tips</li>
+                                <li class="menu-link">Alerts</li>
+                                <li class="menu-link">Blog</li>
+                                <li id="btn-blog">Blog</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-main">
+                        <h1 class="header-hero">Discover Your Life, Travel Where You Want</h1>
+                        <p class="header-desc">Would you explore natur paradise in the world, let’s find the best destination in world with us.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="flight">
+            <div class="container">
+                <div class="flight-container">
+                    <div class="flight-option">
+                        <div class="airplan">
+                            <img srcset="assets/Airplane.png 2x" alt="" class="airplane-logo">
+                            <p class="airplan-title">Flight</p>
+                        </div>
+                        <div class="hotel">
+                            <img srcset="assets/Hotel.png 2x" alt="" class="hotel-logo">
+                            <p class="hotel-title">Hotel</p>
+                        </div>
+                    </div>
+                    <div class="travel">
+                        <div class="location">
+                            <div class="location-from">
+                                <p class="flight-text">Living From</p>
+                                <h3 class="flight-heading">Dubai</h3>
+                            </div>
+                            <img srcset="assets/Airplaneoff.png 2x" alt="" class="location-airplane">
+                            <div class="location-to">
+                                <p class="flight-text">Going to</p>
+                                <h3 class="flight-heading">New York</h3>
+                            </div>
+                        </div>
+                        <div class="date">
+                            <div class="date-leave">
+                                <div class="leave-info">
+                                    <span class="flight-text">Leave</span>
+                                    <img srcset="assets/Airplane.png 2x" alt="">
+                                </div>
+                                <h3 class="flight-heading">23 Jan, Sat</h3>
+                            </div>
+                            <img srcset="assets/Planner.png 2x" alt="" class="date-planner">
+                            <div class="date-return">
+                                <div class="return-info">
+                                    <span class="flight-text">Return</span>
+                                    <img srcset="assets/Airplane.png 2x" alt="">
+                                </div>
+                                <h3 class="flight-heading">14 Jan, Thu</h3>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer">
+            <div class="container">
+                <div class="offer-container">
+                    <h1>Special Upcoming Offers</h1>
+                    <div class="offer-format">
+                        <p class="format-item" id="item-picked">Team</p>
+                        <p class="format-item">Couple</p>
+                        <p class="format-item">Family</p>
+                    </div>
+                    <div class="offer-option">
+                        <div class="option option-1">
+                            <div class="images-design">
+                                <img srcset="img/img1.png 2x" alt="">
+                                <span>14 Feb 2022</span>
+                            </div>
+                            <p class="offer-duration">
+                                <span class="type type-1">Relax</span> 3 Days, 3 Nights
+                            </p>
+                            <p class="offer-title">Loga Sea</p>
+                            <div class="offer-booking">
+                                <span class="offer-price">350$
+                                    <span>/Person</span>
+                                </span>
+                                <button class="btn-booking">Book now</button>
+                            </div>
+                        </div>
+                        <div class="option option-2">
+                            <div class="images-design">
+                                <img srcset="img/img2.png 2x" alt="">
+                                <span>14 Feb 2022</span>
+                            </div>
+                            <p class="offer-duration">
+                                <span class="type type-2">Relax</span> 4 Days, 3 Nights
+                            </p>
+                            <p class="offer-title">Ansgar Scheffold</p>
+                            <div class="offer-booking">
+                                <span class="offer-price">350$
+                                    <span>/Person</span>
+                                </span>
+                                <button class="btn-booking">Book now</button>
+                            </div>
+                        </div>
+                        <div class="option option-3">
+                            <div class="images-design">
+                                <img srcset="img/img3.png 2x" alt="">
+                                <span>14 Feb 2022</span>
+                            </div>
+                            <p class="offer-duration">
+                                <span class="type type-3">Relax</span> 7 Days, 6 Nights
+                            </p>
+                            <p class="offer-title">Lona X</p>
+                            <div class="offer-booking">
+                                <span class="offer-price">350$
+                                    <span>/Person</span>
+                                </span>
+                                <button class="btn-booking">Book now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="image">
+                        <img srcset="img/img4.png 2x" alt="">
+                    </div>
+                    <div class="info">
+                        <h1>Travel Any Corner of The World With Us</h1>
+                        <p>Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+                        <br>
+                        <p>Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+                        <button class="btn-contact">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination">
+            <div class="container">
+                <div class="destination-container">
+                    <h1>Recommended Destination</h1>
+                    <div class="destination-format">
+                        <p id="format-picked">Populor</p>
+                        <p>Adventure</p>
+                        <p>Beath</p>
+                    </div>
+                    <div class="destination-option">
+                        <div class="option option-1">
+                            <img srcset="img/opt1.png 2x" alt="" class="img-opt">
+                            <p>Kina Mountain</p>
+                            <div class="location">
+                                <img srcset="assets/Location.png 2x" alt="">
+                                <span>Cambodia</span>
+                            </div>
+                        </div>
+                        <div class="option option-1">
+                            <img srcset="img/opt2.png 2x" alt="" class="img-opt">
+                            <p>Kina Mountain</p>
+                            <div class="location">
+                                <img srcset="assets/Location.png 2x" alt="">
+                                <span>Cambodia</span>
+                            </div>
+                        </div>
+                        <div class="option option-1">
+                            <img srcset="img/opt3.png 2x" alt="" class="img-opt">
+                            <p>Kina Mountain</p>
+                            <div class="location">
+                                <img srcset="assets/Location.png 2x" alt="">
+                                <span>Cambodia</span>
+                            </div>
+                        </div>
+                        <div class="option option-1">
+                            <img srcset="img/opt4.png 2x" alt="" class="img-opt">
+                            <p>Kina Mountain</p>
+                            <div class="location">
+                                <img srcset="assets/Location.png 2x" alt="">
+                                <span>Cambodia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+</body>
+</html>
