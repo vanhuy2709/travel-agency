@@ -583,6 +583,7 @@ body {
 
 .feedback {
     background-color: #F7F7F7;
+    padding: 13.1rem 0 7.8rem;
 
     .feedback-container {
         display: flex;
@@ -591,9 +592,12 @@ body {
         gap: 0 1.25rem;
 
         .feedback-box {
+            position: relative;
             background: white;
             border-radius: 50px;
             box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            padding-bottom: 5rem;
 
             p {
                 font-weight: 500;
@@ -615,7 +619,16 @@ body {
             }
 
             .ava-feedback {
-
+                position: absolute;
+                display: block;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0.5rem;
+                border-radius: 50%;
+                background: white;
+                box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+                top: 85%;
+                z-index: -1;
             }
         }
 
@@ -623,6 +636,89 @@ body {
         }
 
         .box-2 {
+        }
+    }
+}
+
+.promotion {
+    background-color: #F7F7F7;
+    padding: 5rem 0;
+
+    .promotion-container {
+
+        .advertise {
+            background-image: url(img/skyview.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 31.25rem;
+
+            h1 {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: calc(72 / 48);
+                text-align: center;
+                color: var(--white-text);
+                padding: 7.125rem 0 2.5rem;
+                max-width: 743px;
+                margin: 0 auto;
+            }
+
+            .btn-register {
+                font-family: 'Poppins';
+                outline: none;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: calc(30 / 20);
+                color: var(--blue-text);
+                background: var(--white-text);
+                border: 1px solid white;
+                padding: 1.5rem 2.1rem;
+                border-radius: 25px;
+                display: block;
+                margin: auto;
+                cursor: pointer;
+                transition: 0.5s all;
+
+                &:hover {
+                    color: var(--white-text);
+                    background: var(--blue-text);
+                    border: 1px solid var(--blue-text);
+                }
+            }
+        }
+
+        .license {
+            margin-top: 7.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: calc(42 / 20);
+                color: var(--text-detail);
+            }
+
+            .menu-list {
+                display: flex;
+                align-items: center;
+                gap: 0 3.125rem;
+                
+                .menu-link {
+                    cursor: pointer;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: calc(36 / 24);
+                    color: rgba(0, 0, 0, 0.75);
+                    opacity: 0.5;
+                    transition: 0.5s all;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }
